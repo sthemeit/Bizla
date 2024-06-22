@@ -1,0 +1,38 @@
+// SI Header Area
+.si__header{
+    &__area{
+        padding-top: 30px;
+    }
+    &__menu{
+        border: 1px solid var(--si-heading-color);
+        padding: 8px 10px;
+        width: 672px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            li{
+                display: inline;
+                margin-left: 28px;
+                a{
+                    display: inline-block;
+                    -webkit-border-radius: 25px;
+                    -moz-border-radius: 25px;
+                    -ms-border-radius: 25px;
+                    -o-border-radius: 25px;
+                }
+            }
+            .current__item{
+                padding: 9px 18px;
+                background: var(--si-theme-color);
+                border-radius: 25px;
+                margin-left: 0;
+                margin-right: 28px;
+                a{
+                    color: var(--si-color-white);
+                }
+            }
+        }
+    }
+}

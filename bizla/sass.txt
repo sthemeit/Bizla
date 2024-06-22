@@ -1,0 +1,1 @@
+sass --watch "C:\Users\USER\OneDrive\Desktop\Work\Student\Batch 01\bizla\assets\scss\main.scss":"C:\Users\USER\OneDrive\Desktop\Work\Student\Batch 01\bizla\assets\css\style.css"
