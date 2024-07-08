@@ -1,0 +1,54 @@
+@use '../utils' as *;
+
+// SI Slider Area
+.si__slider{
+    &__area{
+        padding: 393px 0 158px;
+        @media #{$xl}{
+            padding: 200px 0 158px;
+        }
+        @media #{$lg}{
+            padding: 200px 0 158px;
+        }
+        @media #{$md}{
+            padding: 180px 0 158px;
+            font-size: 60px;
+            line-height: 75px;        
+        }
+    }
+    &__content{
+        h1{
+            font-weight: 700;
+            font-size: 77px;
+            line-height: 94px;
+            @media #{$lg}{
+                font-size: 50px;
+                line-height: 65px;
+            }
+            @media #{$md}{
+                font-size: 60px;
+                line-height: 75px;        
+            }
+        }
+        a i{
+                background: #fff;
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+                text-align: center;
+                display: inline-block;
+                border-radius: 50%;
+                color: var(--si-theme-color);
+                font-size: 45px;
+            }
+        span{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 29px;
+            color: var(--si-secondary-color);
+            position: relative;
+            top: -10px;
+            left: 5px;
+        }
+    }
+}

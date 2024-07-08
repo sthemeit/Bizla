@@ -1,0 +1,44 @@
+@use '../utils' as *;
+
+.si__section__title{
+    h5{
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 14px;
+       font-weight: 400;
+       color: var(--si-theme-color);
+       i{
+        font-size: 12px;
+       }
+    }
+    h1{
+        font-size: 45px;
+        margin-bottom: 14px;
+        @media #{$lg}{
+            font-size: 32px;
+        }
+    }
+    &__highlight{
+        position: relative;
+        svg {
+            position: absolute;
+            bottom: 8px;
+            right: 0.5%;
+            z-index: -1;
+            animation: si-blink 1s ease-in-out 0.1s infinite;
+        }
+    }
+}
+@keyframes si-blink{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+

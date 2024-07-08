@@ -1,0 +1,8 @@
+// Transition multiple
+@mixin si-transition-mul($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+    transition: $property ;
+}

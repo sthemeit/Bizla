@@ -1,0 +1,67 @@
+@use '../utils' as *;
+
+// SI Why Choose Us
+.si__why__choose{
+    &__area{
+        
+    }
+    &__thumb{
+        position: relative;
+       img{
+            @media #{$lg,$md}{
+                width: 100%;
+            }
+       }
+    }
+    &__right{
+        @media #{$lg2}{
+            padding-top: 70px;
+        }
+    }
+    &__counter{
+        display: inline-block;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        &__inner{
+            display: flex;
+            align-items: center;
+            background: var(--si-theme-bg);
+            width: 277px;
+            height: 117px;
+            justify-content: center;
+            border-radius: 13px;
+        }
+        &__icon{
+            margin-right: 22px;
+        }
+        &__text{
+            h1{
+                display: inline-block;
+                font-size: 45px;
+                margin-right: -5px;
+                margin-bottom: 0;
+            }
+            h3{
+                display: inline-block;
+                font-size: 45px;
+                margin-bottom: 0;
+            }
+            span{
+                display: block;
+            }
+        }
+    }
+    &__iconbox{
+        h6 i{
+            font-size: 18px;
+            color: var(--si-theme-color);
+            margin-right: 15px;
+        }
+        p{
+            margin-left: 30px;
+            font-size: 18px;
+            width: 84%;
+        }
+    }
+}
